@@ -16,6 +16,26 @@ We use the [BenchmarkDotNet](https://github.com/dotnet/BenchmarkDotNet) tool to 
 **Library Comparisons**:
     Head-to-head performance tests of popular third-party libraries, highlighting the fastest and most memory-efficient options for common tasks.
 
+## 📖 Projects Layout
+```
+├── .gitignore
+├── README.md                   // The main repository overview
+└── src/
+    └── Benchmarks/
+        ├── Benchmarks.csproj   // The .NET project file
+        ├── Program.cs          // Entry point for running the benchmarks
+        │
+        ├── Fundamentals/       // Group for C# language and core library benchmarks
+        │   ├── ArrayVsEnumerable.cs
+        │   ├── IfElseVsSwitch.cs
+        │   └── ...
+        │
+        └── LibraryComparisons/ // Group for third-party library comparisons
+            ├── EfCoreVsDapper.cs
+            ├── AutoMapperVsMapperly.cs
+            └── ...
+```
+
 ## 💪 Support
 If you like this project and want to support it, you can [buy me a coffee︎](https://buymeacoffee.com/muhirwanto.dev). Your coffee will keep me awake while developing this project ☕.
 
